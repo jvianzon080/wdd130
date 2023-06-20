@@ -15,10 +15,6 @@
     --nav-hover-background-color: #61788C
 }
 
-p, span, div {
-    font-family: 'Roboto', sans-serif;
-}
-
 body {
     font-family: var(--paragraph-font);
     max-width: 960px;
