@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #023E73;
+    --secondary-color: #61788C;
+    --accent-color: #D7D9D9;
+
+    --heading-font: 'Montserrat', sans-serif;
+    --paragraph-font: 'Roboto', sans-serif;
+
+    --nav-background-color: #D7D9D9;
+    --nav-link-color: #023E73;
+    --nav-hover-link-color: #61788C;
+    --nav-hover-background-color: #61788C;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;   
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+header {
+    padding: 20px;
+    background-color: var(--accent-color);
+}
+
+p {
+    padding: 25px;
+}
+
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+/* Remove underlines from social media links */
+.social-media-icons a {
+    text-decoration: none;
+}
+
+/* Limit page width */
+body {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* Hero Container styles */
+.hero {
+    position: relative;
+  }
+  
+  .hero img {
+    display: block;
+    width: 100%;
+  }
+  
+  .hero h1, .hero article {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+  }
+  
+  .hero article {
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0.8;
+    padding: 20px;
+  }
+  
+  .hero article img {
+    float: right;
+    margin-left: 20px;
+  }
+
+  .hero-img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .client-img {
+    width: 200px;
+    height: auto;
+  }
+  
+  section img {
+    width: 150px;
+    height: auto;
+    margin: 10px;
+  }
+  
+  /* Add CSS rules for social media icons */
+  .social-media-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+  }
