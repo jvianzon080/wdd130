@@ -37,7 +37,6 @@ main {
     background-color: #eee;
     color: #333;
     text-align: center;
-    position: relative;
  }
 
  aside img {
@@ -84,3 +83,7 @@ main {
  main img {
     float: right;
  }
+
+aside {
+    position: relative;
+}
