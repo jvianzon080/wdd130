@@ -1,0 +1,32 @@
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+}
+
+article {
+    flex: 1 200px;
+}
+
+article:nth-of-type(3) {
+    flex: 2 200px;
+  }
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+button:first-child {
+    align-self: flex-end;
+  }
+
+button:first-child {
+    order: 1;
+  }
+
+button:last-child {
+    order: -1;
+  }
