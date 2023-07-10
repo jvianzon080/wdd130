@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Merriweather, Georgia, serif;
+    font-size: 1.2em;
+    color: #333;
+    background: #fff;
+}
+
+header {
+    margin: 0 auto;
+    width: 650px;
+}
+
+h1 {
+    margin: 1rem;
+    font-size: 1.5em;
+    color: navy;
+    text-align: center;
+}
+
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    background-color: #eee;
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: 0.5rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+}
+
+legend {
+    padding: 0.5rem;
+    color: navy;
+    font-size: 1.3em;
+}
+
+label,
+input,
+button,
+select,
+textarea {
+    font-family: Roboto, Arial, sans-serif;
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+input,
+select,
+textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+button {
+    margin: 1rem;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+footer {
+    margin: 1rem auto 0;
+    width: 650px;
+    text-align: center;
+    font-size: 0.8em;
+    color: #777;
+    border-top: 1px solid #ccc;
+}
+
+.form-item {
+    display: grid;
+    align-items: start;
+    grid-template-rows: auto 1fr;
+    ;
+}
+
+.form-item label {
+    justify-self: start;
+    margin-bottom: 5px
+}
+
+.column1 {
+    display: grid;
+    align-items: start;
+    grid-template-rows: auto 1fr;
+}
+.column2 {
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    margin: 0.5rem 0;
+}
+
+.question-row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.5rem;
+}
+
+.question-row1, .question-row2, .question-row3 label {
+    flex-basis: 60%;
+    text align: right;
+    margin-right: 1rem;
+    margin-bottom: 5px;
+}
+
+.question-row1, select, textarea {
+    flex-basis: 60%;
+    box-sizing: border-box;
+    width:  61%;
+    margin-top: 1rem;
+}
+
+.question-row2, select, textarea {
+    flex-basis: 30%;
+    box-sizing: border-box;
+    width:  100%;
+    margin-top: 1rem;
+}
+
+.question-row3, select, textarea {
+    flex-basis: 30%;
+    box-sizing: border-box;
+    width:  100%;
+    margin-top: 1rem;
+}
+
+.form-item input[type="text"],
+.form-item input[type="email"],
+.form-item select {
+    width: 80%
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+}
