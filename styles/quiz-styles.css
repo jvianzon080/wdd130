@@ -47,7 +47,7 @@ legend {
     padding: 0.5rem;
     color: navy;
     font-size: 1.2em;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 }
 
 label,
@@ -113,11 +113,10 @@ footer {
     text-align: center;
     padding: 0.5em;
     background-color: #000000;
-    background-size: 5px;
     color: #fff;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: smaller;
     margin-left: 8rem;
     margin-right: 8rem;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 }
