@@ -122,9 +122,9 @@ footer {
 }
 
 .question-row {
-        display: flex;
-        align-items: center;
-        margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
 }
 
 .question-row1, .question-row2, .question-row3 label {

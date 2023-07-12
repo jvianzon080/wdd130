@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #023E73;
+    --secondary-color: #61788C;
+    --accent-color: #D7D9D9;
+
+    --heading-font: 'Montserrat', sans-serif;
+    --paragraph-font: 'Roboto', sans-serif;
+
+    --nav-background-color: #D7D9D9;
+    --nav-link-color: #023E73;
+    --nav-hover-link-color: #61788C;
+    --nav-hover-background-color: #D7D9D9;
+}
+
+body {
+  font-family: var(--paragraph-font);
+  max-width: 1000px;
+  padding: 10px;   
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #023E73;
+}
+
+nav {
+  margin-left: 90px;
+  margin-right: 20px;
+}
+
+nav a {
+  margin: 0 10px;
+  color: #D7D9D9;
+  text-decoration: none;
+  padding: 1rem;
+  font-size: larger;
+}
+
+nav a:link,
+nav a:visited {
+  color: #D7D9D9;
+}
+
+nav a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.logo {
+  margin-right: 10px;
+}
+
+p {
+  padding: 25px;
+}
+
+/* Remove underlines from social media links */
+.social-media-icons a {
+  text-decoration: none;
+}
+
+/* Limit page width */
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}  
+
+    
+section img {
+  width: 150px;
+  height: auto;
+  margin: 10px;
+}
+
+.image-section {
+  background-color:#023E73;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+  color: #D7D9D9;
+}
+  
+.image-section .title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color:#D7D9D9;
+}
+  
+.image-section .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+  
+.image-section .content > div {
+  flex: 1 1 auto;
+  max-width: 30%;
+  padding: 0 15px;
+}
+  
+.image-section .content p {
+  font-size: 16px;
+}
+  
+.image-section .center-content img {
+  width: auto;
+  height: 250px;
+  max-width: 500px; 
+  display: block;
+  margin: 0 auto;
+}
+  
+.image-gallery {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.image-gallery .adventure {
+  margin-bottom: 20px;
+}
+
+.image-gallery .title {
+  font-size: 24px;
+}
+
+.image-gallery .image-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px; 
+  flex-wrap: wrap;
+}
+
+.image-gallery .image-container img {
+  max-width: 100%;
+  height: auto;
+  width: 200px; 
+}
+  
+.social-media-icons img {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+
+footer {
+  background-color: #023E73;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer p {
+  color: #D7D9D9;
+  margin: 0;
+  flex-grow: 1;
+  text-align: center;
+}
+
+footer .social-media-icons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+footer .social-media-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+.contact {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact h1 {
+  text-align: center;
+}
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.contact-info {
+  flex: 0 0 300px;
+}
+
+.contact-info h3 {
+  font-size: 20px;
+  color: #023E73;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  margin-bottom: 20px;
+}
+
+.map-container {
+  flex: 1 1 400px;
+  width: 600px;
+}
+
+.executives {
+  background-color: #F2F2F2;
+  padding: 40px;
+}
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.executive {
+  width: 250px;
+  margin: 5px;
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.executive img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+
+.executive h3 {
+  font-size: 20px;
+  margin-bottom: 1px;
+}
+
+.executive p:first-child {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 1px;
+}
+
+.executive p:last-child {
+  font-style: italic;
+  color: #777;
+}
+
+.contact-form {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: max-content;
+  align-content: center;
+  justify-content: center;
+}
+
+.contact-form fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-form legend {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.contact-form p {
+  margin-bottom: 20px;
+}
+
+.contact-form .form-item {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+}
+
+.contact-form select {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form .form-item:last-child {
+  margin-bottom: 0;
+}
+
+.contact-form input[type="checkbox"] {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.contact-form button[type="submit"] {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 60px;
+  margin-top: 10px;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: var(--secondary-color);
+}
