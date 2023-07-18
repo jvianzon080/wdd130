@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #023E73;
+    --secondary-color: #61788C;
+    --accent-color: #D7D9D9;
+
+    --heading-font: 'Montserrat', sans-serif;
+    --paragraph-font: 'Roboto', sans-serif;
+
+    --nav-background-color: #D7D9D9;
+    --nav-link-color: #023E73;
+    --nav-hover-link-color: #61788C;
+    --nav-hover-background-color: #D7D9D9;
+}
+
+body {
+  font-family: var(--paragraph-font);
+}
+
+h1 {
+  color:var(--accent-color)
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #023E73;
+}
+
+nav {
+  margin-left: 90px;
+  margin-right: 20px;
+  height: fit-content;
+}
+
+nav a {
+  margin: 0 10px;
+  color: #D7D9D9;
+  text-decoration: none;
+  padding: 1rem;
+  font-size: larger;
+}
+
+nav button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: var(--accent-color);
+  color:var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+nav a:link,
+nav a:visited {
+  color: #D7D9D9;
+}
+
+nav a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.logo {
+  margin-right:auto;
+}
+
+p {
+  padding: 25px;
+}
+
+<style>
+    .hero {
+        position: relative;
+    }
+
+    .overlay {
+        position: absolute;
+        top: -1;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        z-index: 1;
+    }
+
+    .overlay h1 {
+        font-size: 50px;
+        margin-bottom:1px;
+        text-shadow: 2px 2px --accent-color
+        color: var(--primary-color);
+        padding: 1px;
+    }
+
+    .overlay button {
+        padding: 10px 20px;
+        font-size: 18px;
+        background-color:var(--nav-link-color);
+        color:var(--accent-color);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
+    .content {
+        position: relative;
+    }
+
+    .content video {
+        width: 100%;
+        height: auto;
+    }
+</style>
+  
