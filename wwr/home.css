@@ -131,7 +131,6 @@ p {
 .overlay h2 {
   font-size: 30px;
   color: var(--accent-color);
-  margin-bottom: 1px;
 }
 
 .overlay button {
