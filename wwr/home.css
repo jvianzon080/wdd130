@@ -23,6 +23,29 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--primary-color);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #023E73;
+    --secondary-color: #61788C;
+    --accent-color: #D7D9D9;
+
+    --heading-font: 'Montserrat', sans-serif;
+    --paragraph-font: 'Roboto', sans-serif;
+
+    --nav-background-color: #D7D9D9;
+    --nav-link-color: #023E73;
+    --nav-hover-link-color: #61788C;
+    --nav-hover-background-color: #D7D9D9;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -92,10 +115,11 @@ p {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   text-align: left;
   z-index: 1;
+  margin-top: 255px;
 }
 
 .overlay h1,
@@ -103,12 +127,14 @@ p {
   font-size: 60px;
   text-shadow: 2px 2px #777;
   color: var(--accent-color);
+  margin-bottom: 1px;
 }
 
 .overlay h2 {
   font-size: 30px;
   text-shadow: 2px 2px --primary-color;
   color: var(--accent-color);
+  margin-bottom: 1px;
 }
 
 .overlay button {
@@ -158,7 +184,7 @@ img {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-left: 250px;
+  margin-left: 200px;
   margin-bottom: 100px;
 }
 
@@ -174,8 +200,9 @@ section h2 {
 }
 
 section.trip {
-  padding: 40px;
-  text-align: center;
+  padding: 70px;
+  text-align:center;
+  margin:auto;
 }
 
 section.trip .title {
@@ -186,43 +213,9 @@ section.trip .title {
 }
 
 section.trip .content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-section.trip .trip-box {
-  width: 250px;
-  margin: 5px;
-  padding: 5px;
-  background-color: #fff;
-  border-radius: 5px;
-  text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-section.trip .trip-box img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 5px;
-}
-
-section.trip .trip-box h3 {
-  font-size: 20px;
-  margin-bottom: 1px;
-}
-
-section.trip .trip-box p:first-child {
-  font-size: 16px;
-  font-weight: bold;
-  margin-bottom: 1px;
-}
-
-section.trip .trip-box p:last-child {
-  font-style: italic;
-  color: #777;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
 }
 
 section button {
@@ -233,8 +226,7 @@ section button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  text-align: center;
-  margin-top: 50px;
+  margin-top: px;
 }
 
 .contact-form {

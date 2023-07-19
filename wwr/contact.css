@@ -25,31 +25,48 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
-  margin-bottom: 20px;
   background-color: #023E73;
+  width: 100%;
+  margin-bottom: -50px;
+  margin-top: 0;
 }
 
 nav {
-  margin-left: 90px;
+  margin-left: 0;
   margin-right: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 nav a {
-  margin: 0 10px;
+  margin: 0 20px;
   color: #D7D9D9;
   text-decoration: none;
   padding: 1rem;
   font-size: larger;
 }
 
+nav button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-left: 100px;
+}
+
 nav a:link,
 nav a:visited {
-  color: #D7D9D9;
+  color: var(--accent-color);
 }
 
 nav a:hover {
-  color: #000;
+  color: var(--nav-hover-link-color);
   text-decoration: underline;
 }
 
@@ -114,9 +131,8 @@ section img {
 }
   
 .image-gallery {
-  background-color: #f2f2f2;
   text-align: center;
-  padding: 20px;
+  padding: 50px;
   margin-bottom: 20px;
 }
 
